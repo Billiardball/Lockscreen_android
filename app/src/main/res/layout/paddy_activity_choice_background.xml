@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:material_design="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/kenburnsview_background_choice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/b2" />
+
+    <RelativeLayout
+        android:id="@+id/layout_action_bottom_choice_background"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true" >
+
+        <Gallery
+            android:id="@+id/galery_picture_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/text_choice_from_other"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/background_color_black_blur"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/paddy_pick_image_choice"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_apply_choice_background"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/button_float"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:src="@drawable/choiced_background" />
+
+</RelativeLayout>

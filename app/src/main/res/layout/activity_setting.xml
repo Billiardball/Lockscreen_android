@@ -1,0 +1,425 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"></include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_menu"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            tools:context=".SettingActivity">
+
+            <lockscreen.gpaddy.com.lockscreen.view.TextViewRobotoLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/actionbar"
+                android:padding="@dimen/padding_menu_item"
+                android:text="@string/title_menu_main"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:id="@+id/menuPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_item_menu"
+                    android:padding="@dimen/padding_menu_item">
+
+                    <lockscreen.gpaddy.com.lockscreen.view.TextViewRobotoLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/menu_pass"
+                        android:textColor="@color/text_menu"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbPassCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/button_check"
+                        android:clickable="false" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/menuTablas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_item_menu"
+                    android:padding="@dimen/padding_menu_item">
+
+                    <lockscreen.gpaddy.com.lockscreen.view.TextViewRobotoLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/menu_tablas"
+                        android:textColor="@color/text_menu"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/menuTimeout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_item_menu"
+                    android:padding="@dimen/padding_menu_item">
+
+                    <lockscreen.gpaddy.com.lockscreen.view.TextViewRobotoLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Countdown"
+                        android:textColor="@color/text_menu"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+
+                <!--<lockscreen.gpaddy.com.lockscreen.view.TextViewRobotoLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/menu_activate_lock"
+                    android:textColor="@color/text_menu"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/cbActivate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/button_check"
+                    android:clickable="false" />-->
+
+            <!--<RelativeLayout
+                android:id="@+id/menuDisableLock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_item_menu"
+                android:padding="@dimen/padding_menu_item">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <lockscreen.gpaddy.com.lockscreen.view.TextViewRobotoLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_disable_lock_system_title"
+                        android:textColor="@color/text_menu"
+                        android:textSize="16sp" />
+
+                    <lockscreen.gpaddy.com.lockscreen.view.TextViewRobotoLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/menu_disable_lock_system_descripton"
+                        android:textColor="@color/text_menu_descriiption"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menuReview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_item_menu"
+                android:padding="@dimen/padding_menu_item">
+
+                <lockscreen.gpaddy.com.lockscreen.view.TextViewRobotoLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/menu_review"
+                    android:textColor="@color/text_menu"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menuShare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_item_menu"
+                android:padding="@dimen/padding_menu_item">
+
+                <lockscreen.gpaddy.com.lockscreen.view.TextViewRobotoLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/menu_Share"
+                    android:textColor="@color/text_menu"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menuRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_item_menu"
+                android:padding="@dimen/padding_menu_item">
+
+                <lockscreen.gpaddy.com.lockscreen.view.TextViewRobotoLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/menu_rate"
+                    android:textColor="@color/text_menu"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menuLauncher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_item_menu"
+                android:padding="@dimen/padding_menu_item">
+
+                <lockscreen.gpaddy.com.lockscreen.view.TextViewRobotoLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/menu_launcher"
+                    android:textColor="@color/text_menu"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menuTimeout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_item_menu"
+                android:padding="@dimen/padding_menu_item">
+
+                <lockscreen.gpaddy.com.lockscreen.view.TextViewRobotoLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/menu_timeout"
+                    android:textColor="@color/text_menu"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>-->
+
+            <!--<lockscreen.gpaddy.com.lockscreen.view.TextViewRobotoLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/actionbar"
+                android:padding="@dimen/padding_menu_item"
+                android:text="@string/title_menu_secuirity"
+
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/menuPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_item_menu"
+                android:padding="@dimen/padding_menu_item">
+
+                <lockscreen.gpaddy.com.lockscreen.view.TextViewRobotoLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/menu_pass"
+                    android:textColor="@color/text_menu"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/cbPassCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/button_check"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menuChangePass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_item_menu"
+                android:padding="@dimen/padding_menu_item"
+                android:visibility="gone">
+
+                <lockscreen.gpaddy.com.lockscreen.view.TextViewRobotoLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/menu_change_pass"
+                    android:textColor="@color/text_menu"
+                    android:textSize="16sp" />
+            </RelativeLayout>-->
+
+            <lockscreen.gpaddy.com.lockscreen.view.TextViewRobotoLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/actionbar"
+                android:padding="@dimen/padding_menu_item"
+
+                android:text="@string/title_menu_visual_options"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/menuTimeFormat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_item_menu"
+                android:padding="@dimen/padding_menu_item">
+
+                <lockscreen.gpaddy.com.lockscreen.view.TextViewRobotoLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/menu_time_format"
+                    android:textColor="@color/text_menu"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menuWallpaper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_item_menu"
+                android:padding="@dimen/padding_menu_item">
+
+                <lockscreen.gpaddy.com.lockscreen.view.TextViewRobotoLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/menu_wallpaper"
+                    android:textColor="@color/text_menu"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menuUnlockText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_item_menu"
+                android:padding="@dimen/padding_menu_item">
+
+                <lockscreen.gpaddy.com.lockscreen.view.TextViewRobotoLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/menu_unlock_text"
+                    android:textColor="@color/text_menu"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menuSound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_item_menu"
+                android:padding="@dimen/padding_menu_item">
+
+                <lockscreen.gpaddy.com.lockscreen.view.TextViewRobotoLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/menu_sound"
+                    android:textColor="@color/text_menu"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/cbSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/button_check"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menuVibrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_item_menu"
+                android:padding="@dimen/padding_menu_item">
+
+                <lockscreen.gpaddy.com.lockscreen.view.TextViewRobotoLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/menu_vibrate"
+                    android:textColor="@color/text_menu"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/cbVibrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/button_check"
+                    android:clickable="false" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    </RelativeLayout>
+    <!--<com.google.android.gms.ads.AdView
+        android:layout_width="wrap_content"
+        android:id="@+id/adView"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/ad_unit_banner"
+        android:layout_height="wrap_content">
+
+    </com.google.android.gms.ads.AdView>-->

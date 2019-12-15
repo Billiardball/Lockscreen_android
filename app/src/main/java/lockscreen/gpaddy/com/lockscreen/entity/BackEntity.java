@@ -1,0 +1,1 @@
+package lockscreen.gpaddy.com.lockscreen.entity;public class BackEntity{	private int resources;	public BackEntity(int resources)	{		super();		this.resources = resources;	}	public int getResources()	{		return resources;	}	public void setResources(int resources)	{		this.resources = resources;	}}

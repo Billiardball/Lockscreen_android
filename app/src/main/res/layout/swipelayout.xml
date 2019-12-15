@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="lockscreen.gpaddy.com.lockscreen.LockActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/blur1" />
+
+    <!--<include layout="@layout/statusbar"></include>-->
+
+    <com.daimajia.swipe.SwipeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+           android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Helo"/>
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Helo"/>
+
+        <!--<include layout="@layout/fragment_lock"></include>-->
+
+        <!--<include layout="@layout/fragment_lock_passcode"></include>-->
+    </com.daimajia.swipe.SwipeLayout>
+
+
+</RelativeLayout>

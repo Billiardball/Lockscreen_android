@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Lock Screen</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_lock">LockActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="slidetounlock">Slide to unlock</string>
+    <string name="title_activity_lock2">Lock2</string>
+    <string name="enter_passcode">Type the code</string>
+    <string name="repeat_enter_passcode">Repeat the code</string>
+    <string name="month"> Month </string>
+    <string name="title_menu_main">Principal</string>
+    <string name="menu_activate_lock">Enable Lock</string>
+    <string name="menu_disable_lock_system_title">Disable lockscreen system</string>
+    <string name="menu_disable_lock_system_descripton">Set none or swipe to avoid double lockscreen</string>
+    <string name="menu_review">Preview</string>
+    <string name="menu_Share">Share to your friends</string>
+    <string name="menu_rate">Rate us</string>
+    <string name="title_menu_secuirity">Security</string>
+    <string name="menu_pass">Activate</string>
+    <string name="menu_change_pass">Change Passcode</string>
+    <string name="title_menu_visual_options">Visual</string>
+    <string name="menu_time_format">Time format</string>
+    <string name="menu_wallpaper">Change background</string>
+    <string name="menu_unlock_text">Change text</string>
+    <string name="menu_sound">Activate sound</string>
+    <string name="menu_vibrate">Activate vibration</string>
+    <string name="time_format_12">12h</string>
+    <string name="time_format_24">24h</string>
+    <string name="paddy_no_signal">No Service</string>
+
+    <string name="paddy_pick_image_choice">Pick\nImage</string>
+    <string name="setting">Configuration</string>
+    <string name="menu_launcher">Iphone 6S THEME</string>
+    <string name="menu_timeout">Countdown</string>
+    <string name="menu_tablas">Boards</string>
+
+    <string-array name="dayinweek">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+
+    </string-array>
+
+    <string-array name="month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+
+    </string-array>
+
+    <string-array name="time_out">
+        <item>0 seconds</item>
+        <item>5 seconds</item>
+        <item>10 seconds</item>
+        <item>20 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minute</item>
+
+    </string-array>
+
+    <string name="app_id">0</string>
+    <string name="ad_unit_banner">0</string>
+    <string name="ad_unit_full">0</string>
+
+</resources>

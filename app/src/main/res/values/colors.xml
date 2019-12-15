@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="white200">#50EEEEEE</color>
+    <color name="white500">#00EEEEEE</color>
+    <color name="text_menu">#000000</color>
+    <color name="text_menu_descriiption">#aaaaaa</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="slidetounlock">#bb000000</color>
+    <color name="background_menu">#FAFAFA</color>
+    <color name="item_menu_press">#EEEEEE</color>
+    <color name="background_color_black_blur">#33000000</color>
+    <color name="black">#000000</color>
+</resources>
